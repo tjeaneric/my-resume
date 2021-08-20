@@ -1,0 +1,32 @@
+# Generated via Nexin django powered rest API template
+# Remember to add specific versions for packages to ensure compatibility
+
+Django~=3.2.6
+djangorestframework~=3.12.4
+django-cors-headers
+django-filter
+dj-static
+Pillow
+django-storages
+psycopg2-binary
+dj-database-url
+pre-commit
+black
+requests
+python-decouple
+Unipath~=1.1
+drf-yasg
+
+redis
+asgiref
+celery~=5.1.2
+django-celery-beat
+
+
+django_heroku
+gunicorn
+
+
+boto3
+botocore
+s3transfer

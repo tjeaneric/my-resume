@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jean's Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="static/resume/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="left_side">
+        <div class="profileText">
+            <div class="imgBx">
+                <img src="static/resume/eric.jpg" alt="my pic">
+            </div>
+            <h2>Jean Eric TUYISHIMIRE<br><span>Web Developer</span></h2>
+        </div>
+        <div class="contactInfo">
+            <h3 class="title">Contact Info</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+</span>
+                    <span class="text">+250 7830 493 52</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+</span>
+                    <span class="text">ericjohn415@gmail.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i>
+</span>
+                    <span class="text">example.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i>
+</span>
+                    <span class="text">linkedin.com/in/tuyishimire/</span>
+                </li>
+                 <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+</span>
+                    <span class="text">Kicukiro, Gikondo, Rwanda</span>
+                </li>
+            </ul>
+        </div>
+        <div class="contactInfo education">
+        <h3 class="title"> Education</h3>
+        <ul>
+            <li>
+                <h5>2014 - 2016</h5>
+                <h4>High School Diploma in Mathematics-Physics- Computer</h4>
+                <h4>Lycée de Kigali,</h4>
+            </li>
+            <li>
+                <h5>2017 - 2021</h5>
+                <h4>Computer Engineering</h4>
+                <h4>University of Rwanda</h4>
+            </li>
+        </ul>
+    </div>
+        <div class="contactInfo language">
+        <h3 class="title"> Languages</h3>
+        <ul>
+            <li>
+                <span class="text">English</span>
+                <span class="percent">
+                    <div style="width: 70%;"></div>
+                </span>
+            </li>
+            <li>
+                <span class="text">French</span>
+                <span class="percent"><div style="width: 40%;"></div></span>
+            </li>
+            <li>
+                <span class="text">Kinyarwanda</span>
+                <span class="percent"><div style="width: 95%;"></div></span>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="right_side">
+        <div class="about">
+            <h2 class="title2">Profile</h2>
+            <p>Passionate, back-end web developer with a dream of changing the
+world through coding.
+            </p>
+            <br>
+            <p>
+                Process oriented data analyst with 2 years of experience.
+Experienced in interpreting and analyzing data to drive growth for e-
+commerce company.
+            </p>
+        </div>
+        <div class="about">
+            <h2 class="title2">Experience</h2>
+            <div class="box">
+                <div class="year_company">
+                    <h5>2019 - Present</h5>
+                    <h5>Eritcus</h5>
+                </div>
+                <div class="text">
+                    <h4>Data Analyst</h4>
+                </div>
+            </div>
+             <div class="box">
+                <div class="year_company">
+                    <h5>2020 - Present</h5>
+                    <h5>Nexin</h5>
+                </div>
+                <div class="text">
+                    <h4>Back-End Developer</h4>
+                </div>
+            </div>
+        </div>
+        <div class="about skills">
+            <h2 class="title2">Professional Skills</h2>
+            <div class="box">
+                <h4>Html</h4>
+                <div class="percent">
+                    <div style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>Css</h4>
+                <div class="percent"><div style="width: 50%;"></div></div>
+            </div>
+            <div class="box">
+                <h4>JavaScript</h4>
+                <div class="percent"><div style="width: 40%;"></div></div>
+            </div>
+            <div class="box">
+                <h4>Python</h4>
+                <div class="percent"><div style="width: 70%;"></div></div>
+            </div>
+        </div>
+        <div class="about interest">
+            <h2 class="title2">Interests</h2>
+            <ul>
+                <li><i class="fa fa-futbol-o" aria-hidden="true"></i>
+ Football</li>
+                <li><i class="fa fa-film" aria-hidden="true"></i>
+ Movie</li>
+                <li><i class="fa fa-music" aria-hidden="true"></i>
+ Music</li>
+                <li><i class="fa fa-gamepad" aria-hidden="true"></i>
+ Gaming</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="form">
+  <section class="section-form" style="margin-right: 10px;">
+      <div class="row">
+        <h2 class="title2">Send me a message</h2>
+          <h2>{{note}}</h2>
+      </div>
+      <div class="row">
+        <form class="contact-form" action="{% url 'home' %}" method="post">
+            {% csrf_token %}
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">Name</label>
+            </div>
+            <div class="col span-2-of-3">
+            {{ contactform.name }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">Email</label>
+            </div>
+            <div class="col span-2-of-3">
+                {{ contactform.email }}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label>Your message</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{ contactform.message }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label>&nbsp;</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input style="background-color: #03a9f4; color: #fff;" type="submit" value="Send it!" />
+            </div>
+          </div>
+        </form>
+          <ul class="logo" style="padding-top: 50px;">
+              <h2 class="title2">Our Partners</h2>
+              <li><a href="https://hng.tech/" target="_blank"><img src="static/resume/hng.png" alt="HNG logo" style="width: 100px;"></a></li>
+              <li><a href="https://internship.zuri.team/" target="_blank"><img src="static/resume/i4g.jpg" alt="I4G logo" style="width: 100px;"></a></li>
+              <li><a href="https://training.zuri.team/" target="_blank"><img src="static/resume/zuri.png" alt="ZURI logo" style="width: 100px;"></a></li>
+          </ul>
+      </div>
+    </section>
+</div>
+</body>
+</html>
