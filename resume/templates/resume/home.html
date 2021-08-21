@@ -6,15 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jean's Resume</title>
+    {% load static %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="static/resume/style.css">
+    <link rel="stylesheet" href="{% static 'resume/style.css' %}">
 </head>
 <body>
 <div class="container">
     <div class="left_side">
         <div class="profileText">
             <div class="imgBx">
-                <img src="static/resume/eric.jpg" alt="my pic">
+                <img src="{% static 'resume/eric.jpg'%}" alt="my pic">
             </div>
             <h2>Jean Eric TUYISHIMIRE<br><span>Web Developer</span></h2>
         </div>
@@ -200,9 +201,9 @@ commerce company.
         </form>
           <ul class="logo" style="padding-top: 50px;">
               <h2 class="title2">Our Partners</h2>
-              <li><a href="https://hng.tech/" target="_blank"><img src="static/resume/hng.png" alt="HNG logo" style="width: 100px;"></a></li>
-              <li><a href="https://internship.zuri.team/" target="_blank"><img src="static/resume/i4g.jpg" alt="I4G logo" style="width: 100px;"></a></li>
-              <li><a href="https://training.zuri.team/" target="_blank"><img src="static/resume/zuri.png" alt="ZURI logo" style="width: 100px;"></a></li>
+              <li><a href="https://hng.tech/" target="_blank"><img src="{% static 'resume/hng.png'%}" alt="HNG logo" style="width: 100px;"></a></li>
+              <li><a href="https://internship.zuri.team/" target="_blank"><img src="{% static 'resume/i4g.jpg'%}" alt="I4G logo" style="width: 100px;"></a></li>
+              <li><a href="https://training.zuri.team/" target="_blank"><img src="{% static 'resume/zuri.png'%}" alt="ZURI logo" style="width: 100px;"></a></li>
           </ul>
       </div>
     </section>
