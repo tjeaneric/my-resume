@@ -146,8 +146,7 @@ STATIC_URL = '/static/'
 # STATICFILES_DIRS = [BASE_DIR / "static"]
 MEDIA_ROOT = "uploaded"
 MEDIA_URL = "/media/"
-print(BASE_DIR)
-print(STATIC_ROOT)
+
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 5242880
 
